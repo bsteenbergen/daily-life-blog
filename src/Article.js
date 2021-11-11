@@ -1,13 +1,6 @@
-import { useState, useEffect } from "react";
-import { fetchArticleById } from "./articleService";
+import "./Article.css"
 
-export default function Article({ articleId }) {
-  const [article, setArticle] = useState(null);
-
-  useEffect(() => {
-    setArticle(fetchArticleById(articleId));
-  }, [articleId]);
-
+export default function Article({ article }) {
   return (
     <article>
       {!article ? (

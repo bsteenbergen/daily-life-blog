@@ -1,14 +1,15 @@
-export default function Nav({ titles, setArticleId }) {
-    return (
-      <nav>
-        <ul>
-          {titles &&
-            titles.map((a) => (
-              <li key={a.id} onClick={() => setArticleId(a.id)}>
-                {a.title}
-              </li>
-            ))}
-        </ul>
-      </nav>
-    );
-  }
+import './Nav.css'
+
+export default function Nav({ articles, setArticle }) {
+  return (
+    <nav>
+      {!articles
+        ? "No articles"
+        : articles.map((a) => (
+            <p key={a.id} onClick={() => setArticle(a)}>
+              {a.title}
+            </p>
+          ))}
+    </nav>
+  );
+}

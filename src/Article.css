@@ -1,0 +1,14 @@
+article .date {
+  font-style: italic;
+}
+  
+article .body {
+  white-space: break-spaces;
+  font-size: 3vh;
+}
+  
+.error {
+  background-color: red;
+  color: gold;
+  padding: 5px;
+}
