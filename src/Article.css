@@ -1,14 +1,35 @@
+article {
+  margin: 20px;
+}
+
 article .date {
   font-style: italic;
 }
-  
+
 article .body {
   white-space: break-spaces;
   font-size: 3vh;
+  background-color: lightgray;
+  padding: 20px;
+  border-radius: 10px;
 }
-  
+
 .error {
   background-color: red;
   color: gold;
   padding: 5px;
+}
+
+h2 {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  text-shadow: 1px 1px 2px gray;
+  font-size: 5vh;
+  color: rgb(48, 71, 69);
+}
+
+@media only screen and (max-width: 600px) {
+  article {
+    margin: 30px;
+    width: 200px;
+  }
 }

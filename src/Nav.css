@@ -1,19 +1,7 @@
-nav,
-article {
-  height: 100%;
-  padding: 3vh;
-}
-
 nav {
+  height: 100%;
   background-color: rgb(207, 221, 221);
   text-align: center;
-}
-
-h2 {
-  font-family: "Helvetica Neue",Arial,sans-serif;
-  text-shadow: 1px 1px 2px gray;
-  font-size: 5vh;
-  color: rgb(48, 71, 69);
 }
 
 nav p:hover {
@@ -24,6 +12,6 @@ nav p:hover {
 
 @media only screen and (max-width: 600px) {
   nav {
-    width: 50px;
+    width: 100px;
   }
 }

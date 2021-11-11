@@ -8,6 +8,7 @@ import "./App.css";
 import lmu from "./lmu.jpeg";
 import github from "./icons8-github-48.png";
 import linkedin from "./icons8-linkedin-circled-48.png";
+import bear from "./dancing.gif";
 
 import { useAuthState } from "react-firebase-hooks/auth";
 import { auth } from "./firebaseConfig";
@@ -69,7 +70,14 @@ export default function App() {
             New Article
           </button>
         )}
-        {!user ? <SignIn /> : <SignOut />}
+        {!user ? (
+          <div>
+            <SignIn /> <p id="signInPage">sign in to see the posts!</p>
+            <img id="bear" src={bear} alt="dancing bear" />
+          </div>
+        ) : (
+          <SignOut />
+        )}
       </header>
 
       <footer>
